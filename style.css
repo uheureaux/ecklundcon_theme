@@ -1,0 +1,52 @@
+/*
+Theme Name: Ecklund Consulting
+Theme URI: #
+Author: EpicLunch Designs
+Author URI: http://epiclunch.net
+Description: 
+Version: 1.0
+License: 
+License URI: 
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: ecklundcon_theme
+*/
+
+body {
+    background-color: #708644;
+    font: 16px arial, sans-serif;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header {
+    padding: 10px;
+    background-color: #c05743;
+    color: #fff;
+}
+
+footer {
+    width: 780px;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar {
+    border: 1px red solid;
+    float: right;
+    width: 200px;
+}
+
+nav ul li {
+    display: inline-block;
+}
