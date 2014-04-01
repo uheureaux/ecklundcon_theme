@@ -1,8 +1,9 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<?php register_sidebar( array(
+    'name' => 'sidebar1',
+    'id' => 'sidebar1',
+    'description' => 'The first sidebar of the theme!',
+    'class' => 'sidebar',
+    'before_widget' => '<li class="widget">',
+    'after_widget' => '</li>',
+    'before_title' => '<h3 class="widget_title">',
+    'after_title' => '</h3>' )); ?>
