@@ -50,3 +50,11 @@ footer {
 nav ul li {
     display: inline-block;
 }
+
+nav ul li a {
+    padding: 10px 20px;
+}
+
+.posts {
+    padding: 5px;
+}
