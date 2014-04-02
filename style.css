@@ -40,14 +40,14 @@ header {
     background: #fff no-repeat;
 }
 
-.left { float: left; }
-
-.right { float: right; }
-
 footer {
     background: #000 no-repeat;
     color: #fff;
 }
+
+.left { float: left; }
+
+.right { float: right; }
 
 /******** BANNER ********/
 #banner {
@@ -80,7 +80,11 @@ nav ul li a {
 
 /******** POSTS ********/
 .posts {
-    padding: 5px;
+    padding: 5px auto;
+}
+
+#post {
+    padding: 5px 0;
 }
 
 /******** SOCIAL MEDIA ********/
