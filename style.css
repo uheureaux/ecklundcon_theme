@@ -26,7 +26,10 @@ body {
     margin: 0 auto;
 }
 
-header, #content, footer { padding: 20px; }
+header, #content, footer { 
+    padding: 20px;
+    overflow: auto;
+}
 
 header {
     background: #c05743 no-repeat;
@@ -35,20 +38,22 @@ header {
 
 #content {
     background: #fff no-repeat;
-    overflow: auto;
 }
 
-#left { float: left; }
+.left { float: left; }
 
-#right { float: right; }
+.right { float: right; }
 
 footer {
     background: #000 no-repeat;
     color: #fff;
-    overflow: auto;
 }
 
 /******** BANNER ********/
+#banner {
+    overflow: auto;
+}
+
 #logo { 
     display: block;
     position: relative;

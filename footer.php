@@ -8,7 +8,7 @@
                 <div id="credits">
                     <ul>
                         <li id="mention">Design by <a href="#">EpicLunch Designs</a></li>
-                        <li id="copyright">&copy; <?=date('Y')?> Eklund Consulting</li>
+                        <li id="copyright">&copy; <?=date('Y') ?> Eklund Consulting</li>
                     </ul>
                 </div>
             </footer>
