@@ -1,5 +1,5 @@
 /*
-Theme Name: Ecklund Consulting
+Theme Name: Eklund Consulting
 Theme URI: #
 Author: EpicLunch Designs
 Author URI: http://epiclunch.net
@@ -11,43 +11,54 @@ Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, 
 Text Domain: ecklundcon_theme
 */
 
+/******** CSS RESET ********/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
 /******** LAYOUT ********/
 body {
     background-color: #708644;
     font: 16px arial, sans-serif;
+    color: #000;
 }
 
 #container {
     width: 800px;
     margin: 0 auto;
-    color: #000;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
+
+header, #content, footer { padding: 20px; }
 
 header {
-    padding: 10px;
-    background-color: #c05743;
+    background: #c05743 no-repeat;
     color: #fff;
 }
+
+#content {
+    background: #fff no-repeat;
+    overflow: auto;
+}
+
+#left { float: left; }
+
+#right { float: right; }
 
 footer {
-    width: 780px;
-    margin: 0 auto;
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #000;
+    background: #000 no-repeat;
     color: #fff;
+    overflow: auto;
 }
 
-/******** SIDEBAR ********/
-.sidebar {
-    border: 1px red solid;
-    float: right;
-    width: 200px;
+/******** BANNER ********/
+#logo { 
+    display: block;
+    position: relative;
+    margin: 10px;
+    background: #c05743 url('assets/images/eklund_consulting_logo.png') no-repeat;
+    width: 354px;
+    height: 35px;
 }
 
+/******** NAVIGATION ********/
 nav ul li {
     display: inline-block;
 }
@@ -56,7 +67,27 @@ nav ul li a {
     padding: 10px 20px;
 }
 
+/******** SIDEBAR ********/
+.sidebar {
+    border: 1px red dashed;
+    width: 200px;
+}
+
 /******** POSTS ********/
 .posts {
     padding: 5px;
+}
+
+/******** SOCIAL MEDIA ********/
+#social_widgets {
+    float: left;
+}
+
+/******** EXTRA INFORMATION ********/
+#credits {
+    float: right;
+}
+
+#copyright, #mention{
+    display: inline-block;
 }

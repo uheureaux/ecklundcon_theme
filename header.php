@@ -11,7 +11,7 @@
     <body>
         <div id="container">
             <header>
-                <h1><a href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a></h1>
+                <a href="<?php bloginfo('url') ?>"><div id="logo"></div></a>
                 <nav>
                     <?php wp_nav_menu()?>
                 </nav>
