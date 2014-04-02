@@ -1,5 +1,3 @@
-
-    
             <footer>
                 &copy; <?=date('Y')?> Ecklund Consulting
             </footer>
