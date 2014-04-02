@@ -1,4 +1,4 @@
-<?php register_sidebar( array(
+<?php if (function_exists('register_sidebar')) { register_sidebar( array(
     'name' => 'sidebar1',
     'id' => 'sidebar1',
     'description' => 'The first sidebar of the theme!',
@@ -6,4 +6,4 @@
     'before_widget' => '<li class="widget">',
     'after_widget' => '</li>',
     'before_title' => '<h3 class="widget_title">',
-    'after_title' => '</h3>' )); ?>
+'after_title' => '</h3>' ));}?>

@@ -11,6 +11,7 @@ Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, 
 Text Domain: ecklundcon_theme
 */
 
+/******** LAYOUT ********/
 body {
     background-color: #708644;
     font: 16px arial, sans-serif;
@@ -19,7 +20,6 @@ body {
 #container {
     width: 800px;
     margin: 0 auto;
-    background-color: #fff;
     color: #000;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -41,6 +41,7 @@ footer {
     color: #fff;
 }
 
+/******** SIDEBAR ********/
 .sidebar {
     border: 1px red solid;
     float: right;
@@ -55,6 +56,7 @@ nav ul li a {
     padding: 10px 20px;
 }
 
+/******** POSTS ********/
 .posts {
     padding: 5px;
 }

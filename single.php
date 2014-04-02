@@ -1,10 +1,14 @@
 <?php get_header()?>
 
-<div class="posts">
-    <?php while(have_posts()): the_post()?>     
-    <h2><a href="<?php the_permalink()?>"><?php the_title()?></a></h2> by <?php the_author()?> at <?php the_time()?>
-        <?php the_content('Click here for more!')?>
-    <?php endwhile;?>
+<div id="content">
+
+    <div class="posts">   
+        <h2><a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
+        by <a href="<?php the_author_posts_link()?>"><?php the_author()?></a> at <?php the_time(wp_o)?>
+            <?php the_content('Click here for more!')?>
+
+    </div>
+    
 </div>
 
 <?php get_sidebar()?>
