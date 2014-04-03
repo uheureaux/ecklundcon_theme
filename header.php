@@ -15,7 +15,8 @@
                     <a href="<?php bloginfo('url') ?>" class="left"><div id="logo"></div></a>
                     <?php dynamic_sidebar('search') ?>
                 </div>
-                <nav>
-                    <?php wp_nav_menu() ?>
-                </nav>
+
             </header>
+            <nav>
+                <?php wp_nav_menu() ?>
+            </nav>
