@@ -14,4 +14,4 @@
     'before_widget' => '<div id="recent_posts">',
     'after_widget' => '</div>',
     'before_title' => '<h3 id="recent_posts_title">',
-    'after_title' => '</h3>' ));}
+    'after_title' => '</h3>' ));}?>
