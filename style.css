@@ -16,8 +16,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /******** LAYOUT ********/
 body {
-    background-color: #708644;
-    font: 16px arial, sans-serif;
+    background-color: #d3e7ac;
+    font-size: 16px;
+    font-family: sans-serif;
     color: #000;
 }
 
@@ -32,17 +33,18 @@ header, #content, footer {
 }
 
 header {
-    background: #c05743 no-repeat;
+    background: #AFD368 no-repeat;
     color: #fff;
 }
 
 #content {
-    background: #fff no-repeat;
+    background: #F8FFD0 no-repeat;
 }
 
 footer {
     background: #000 no-repeat;
     color: #fff;
+    font-size: 10px;
 }
 
 .left { float: left; }
@@ -58,12 +60,19 @@ footer {
     display: block;
     position: relative;
     margin: 10px;
-    background: #c05743 url('assets/images/eklund_consulting_logo.png') no-repeat;
+    background: #AFD368 url('assets/images/eklund_consulting_logo.png') no-repeat;
     width: 354px;
     height: 35px;
 }
 
 /******** NAVIGATION ********/
+nav { 
+    padding: 10px;
+    background-color: #c05743;
+    text-align: center; 
+    font-weight: bold;
+}
+
 nav ul li {
     display: inline-block;
 }
@@ -99,4 +108,19 @@ nav ul li a {
 
 #copyright, #mention{
     display: inline-block;
+    padding-left: 20px;
+}
+
+/******** LINKS ********/
+body a, body a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+nav a, nav a:visited {
+    color: #fff;
+}
+
+footer a, footer a:visited {
+    color: #fff;
 }
