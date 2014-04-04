@@ -1,3 +1,5 @@
+<?php add_theme_support('html5', array('search-form')); ?> <!-- Adding HTML5 support to the theme. --!>
+
 <?php if (function_exists('register_sidebar')) { register_sidebar( array(
     'name' => 'Search Bar',
     'id' => 'search',

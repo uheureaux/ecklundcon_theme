@@ -13,7 +13,9 @@
             <header>
                 <div id="banner">
                     <a href="<?php bloginfo('url') ?>" class="left"><div id="logo"></div></a>
-                    <?php dynamic_sidebar('search') ?>
+                    <div id="search">
+                        <?php get_search_form()?>
+                    </div>
                 </div>
 
             </header>

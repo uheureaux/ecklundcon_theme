@@ -43,7 +43,7 @@ header {
 }
 
 footer {
-    background: #000 no-repeat;
+    background: #222125 no-repeat;
     color: #fff;
     font-size: 10px;
 }
@@ -51,6 +51,22 @@ footer {
 .left { float: left; }
 
 .right { float: right; }
+
+h1 { 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 { 
+    font-size: 26px; 
+    font-weight: bold;
+}
+
+h3 { 
+    font-size: 22px; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
 /******** BANNER ********/
 #banner {
@@ -107,6 +123,22 @@ nav ul li a {
     padding: 5px 0;
 }
 
+/******** SEARCH ********/
+#search { 
+    position: relative;
+    top: 13px;
+    float: right;
+}
+
+.search-submit { 
+    position: relative;
+    top: 2px;
+    background: #AFD368 url('assets/images/search.png') no-repeat;
+    border: 0;
+    height: 16px;
+    width: 16px;
+}
+
 /******** SOCIAL MEDIA ********/
 #social_widgets {
     float: left;
@@ -123,22 +155,6 @@ nav ul li a {
 }
 
 /******** LINKS ********/
-h1 { 
-    font-size: 30px;
-    font-weight: bold;
-}
-
-h2 { 
-    font-size: 26px; 
-    font-weight: bold;
-}
-
-h3 { 
-    font-size: 22px; 
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
 body a, body a:visited{
     text-decoration: none;
     color: #000;
