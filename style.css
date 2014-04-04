@@ -19,7 +19,7 @@ body {
     background-color: #d3e7ac;
     font-size: 16px;
     font-family: sans-serif;
-    color: #000;
+    color: #222125;
 }
 
 #container {
@@ -45,7 +45,7 @@ header {
 footer {
     background: #222125 no-repeat;
     color: #fff;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .left { float: left; }
@@ -123,6 +123,10 @@ nav ul li a {
     padding: 5px 0;
 }
 
+#post h3 {
+    margin: 10px 0;
+}
+
 /******** SEARCH ********/
 #search { 
     position: relative;
@@ -144,9 +148,34 @@ nav ul li a {
     float: left;
 }
 
+#social_widgets ul li {
+    display: inline-block;
+    margin: 0 10px;
+    list-style: none;
+}
+
+#facebook-icon, #twitter-icon, #googleplus-icon, #linkedin-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#facebook-icon {
+    background-image: url('assets/images/facebook.png');
+}
+#twitter-icon {
+    background-image: url('assets/images/twitter.png');
+}
+#googleplus-icon {
+    background-image: url('assets/images/googleplus.png');
+}
+#linkedin-icon {
+    background-image: url('assets/images/linkedin.png');
+}
+
 /******** EXTRA INFORMATION ********/
 #credits {
     float: right;
+    margin: 25px 0 0 0;
 }
 
 #copyright, #mention{
@@ -157,7 +186,7 @@ nav ul li a {
 /******** LINKS ********/
 body a, body a:visited{
     text-decoration: none;
-    color: #000;
+    color: #222125;
 }
 
 nav a, nav a:visited {
