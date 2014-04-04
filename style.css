@@ -44,7 +44,7 @@ header {
 
 footer {
     background: #222125 no-repeat;
-    color: #fff;
+    color: #F8FFD0;
     font-size: 11px;
 }
 
@@ -194,5 +194,5 @@ nav a, nav a:visited {
 }
 
 footer a, footer a:visited {
-    color: #fff;
+    color: #F8FFD0;
 }
