@@ -8,7 +8,7 @@
             <h4>Posted on <?php the_time('l F jS, Y')?> by <?php the_author()?></h4>
         </div>
         <div id="post_content">
-            <p><?php the_content()?>.</p>
+            <p><?php the_content()?></p>
         </div>
         <div id="post_footer">
             <p><?php the_time('l F jS, Y') ?></p>

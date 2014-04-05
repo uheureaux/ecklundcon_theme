@@ -182,6 +182,7 @@ nav ul li a {
 }
 
 #post_title h2{
+    margin-bottom: 0;
     font-size:21px;
     font-weight: bold;
 }
@@ -197,6 +198,7 @@ nav ul li a {
 }
 
 #post_footer{
+    padding:12px 0 0 0;
     font-size: 12px;
     color: #777;
 }
