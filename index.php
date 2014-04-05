@@ -4,9 +4,9 @@
     <div id="top-panel">
         <div id="top-panel-pic" class="left"></div>
         <div id="top-panel-info" class="right">
-            <?php $page_52 = get_page(52);?>
-            <h2><?php echo $page_52->post_title ?></h2>
-            <p><?php echo $page_52->post_content; ?></p>
+            <?php $page_28 = get_page(28);?>
+            <h2><?php echo $page_28->post_title ?></h2>
+            <p><?php echo $page_28->post_content; ?></p>
             <div class="buttoncontainer">
                 <a href="#">
                     <div class="button">Call to Action</div>
