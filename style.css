@@ -19,7 +19,11 @@ body {
     background-color: #d3e7ac;
     font-size: 16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+<<<<<<< HEAD
     color: #464646;
+=======
+    color: #222125;
+>>>>>>> be3a4d2ca5122bd171f46d7d1ec759f78a52ff4e
 }
 
 #container {
@@ -53,19 +57,30 @@ footer {
 .right { float: right; }
 
 h1 { 
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 h2 { 
-    font-size: 26px; 
+    font-size: 24px; 
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 h3 { 
-    font-size: 22px; 
+    font-size: 20px; 
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+#top-panel {
+    overflow: auto;
+}
+
+#top-panel-info {
+    margin-left: 10px;
+    padding: -10px;
+    width: 540px;
 }
 
 /******** BANNER ********/
@@ -221,4 +236,35 @@ nav a, nav a:visited {
 
 footer a, footer a:visited {
     color: #F8FFD0;
+}
+
+/******** BUTTONS ********/
+#top-panel .buttoncontainer {
+    height: 83px;
+}
+
+#top-panel .button {
+    position: relative;
+    top: 30px;
+    left: 180px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: #c05743;
+    border: 1px #693025 solid;
+    box-shadow: #000 2px 2px 8px;
+}
+
+#top-panel .button span {
+    position: relative;
+    top: 10px;
+    color: #fff;
+}
+
+/******** IMAGES ********/
+#top-panel-pic {
+    border: 1px #222125 solid;
+    background-image: url(assets/images/);
+    width: 200px;
+    height: 200px;
 }
