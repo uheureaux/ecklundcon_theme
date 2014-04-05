@@ -22,7 +22,6 @@ body {
     font-size: 16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #464646;
-    color: #222125;
 }
 
 #container {
@@ -200,6 +199,14 @@ nav ul li a {
     padding:12px 0 0 0;
     font-size: 12px;
     color: #777;
+}
+
+#post_tags{
+    padding-bottom:5px;
+}
+
+#post_before{
+    margin-right: 12px;
 }
 
 /******** SEARCH ********/
