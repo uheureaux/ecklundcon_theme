@@ -2,9 +2,9 @@
 
 <div id="content">   
     <div id="top-panel">
-        <div id="top-panel-pic" class="left"></div>
+        <?php $page_52 = get_page(52);?>
+        <div id="top-panel-pic" class="left"><?php ?></div>
         <div id="top-panel-info" class="right">
-            <?php $page_52 = get_page(52);?>
             <h2><?php echo $page_52->post_title ?></h2>
             <p><?php echo $page_52->post_content; ?></p>
             <div class="buttoncontainer">

@@ -19,7 +19,6 @@ body {
     background-color: #DEF0BC;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #d3e7ac;
     font-size: 16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #464646;
@@ -43,7 +42,7 @@ header, footer {
 }
 
 header {
-    margin-top: -22px;
+    margin-top: 10px;
     background: #C4DF90 no-repeat;
     color: #fff;
 }
