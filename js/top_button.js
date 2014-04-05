@@ -19,9 +19,9 @@ $('document').scroll(function () {
     }
 });
 
-$("#top-button a").click(function() {
+$('#top-button a').click(function() {
         var topButtonId = $(this).attr("href");
-        $("body,html").animate({scrollTop: $(topButtonId).offset().top}, "slow");
+        $('body,html').animate({scrollTop: $(topButtonId).offset().top}, 'slow');
         return false;
 });
 

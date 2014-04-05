@@ -16,9 +16,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /******** LAYOUT ********/
 body {
-    background-color: #d3e7ac;
-    font-size: 16px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #DEF0BC;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #222125;
 }
 
@@ -28,21 +28,28 @@ body {
     -webkit-box-shadow: 2px 2px 7px #000;
 }
 
-header, #content, footer { 
+header, footer { 
     padding: 20px;
     overflow: auto;
 }
 
+#content {
+    padding: 30px;
+    overflow: auto;
+}
+
 header {
-    background: #AFD368 no-repeat;
+    margin-top: -22px;
+    background: #C4DF90 no-repeat;
     color: #fff;
 }
 
 #content {
-    background: #F8FFD0 no-repeat;
+    background: #FFF no-repeat;
 }
 
 footer {
+    margin-bottom: 20px;
     background: #222125 no-repeat;
     color: #F8FFD0;
     font-size: 11px;
@@ -54,29 +61,51 @@ footer {
 
 h1 { 
     font-size: 28px;
-    font-weight: bold;
 }
 
 h2 { 
     font-size: 24px; 
-    font-weight: bold;
-    margin-bottom: 15px;
 }
 
 h3 { 
     font-size: 20px; 
-    font-weight: bold;
+}
+
+h4 { 
+    font-size: 16px; 
+}
+
+h5 { 
+    font-size: 14px; 
     margin-bottom: 5px;
+}
+
+h6 { 
+    font-size: 8px; 
+}
+
+p {
+    line-height: 1.2;
 }
 
 #top-panel {
     overflow: auto;
+    margin-bottom: 35px;
 }
 
 #top-panel-info {
     margin-left: 10px;
     padding: -10px;
-    width: 540px;
+    width: 520px;
+    font-size: 16px;
+}
+
+#top-panel-info h2 {
+    margin-bottom: 20px;
+}
+
+#bottom-panel {
+    margin: 20px 0;
 }
 
 /******** BANNER ********/
@@ -88,7 +117,7 @@ h3 {
     display: block;
     position: relative;
     margin: 10px;
-    background: #AFD368 url('assets/images/eklund_consulting_logo.png') no-repeat;
+    background: #C4DF90 url('assets/images/eklund_consulting_logo.png') no-repeat;
     width: 354px;
     height: 35px;
 }
@@ -107,12 +136,12 @@ nav {
     text-align: center; 
     font-size: 14px;
     font-weight: bold;
-    -webkit-animation: sillynav 3s infinite;
+    //-webkit-animation: sillynav 3s infinite;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 7px;
 }
 
 nav ul li a {
@@ -126,17 +155,18 @@ nav ul li a {
 }
 
 /******** POSTS ********/
-#posts {
-    padding: 5px auto;
+.post {
+    padding: 10px 0;
+    overflow: auto;
 }
 
-#post {
-    padding: 5px 0;
-}
+.post_content { width:318px; }
 
-#post h3 {
-    margin: 10px 0;
-}
+.post_content h3 { margin-bottom: 5px; }
+
+#latest_blog_posts { width: 460px;}
+
+#latest_blog_posts h2 { margin-bottom: 10px; }
 
 /******** SEARCH ********/
 #search { 
@@ -148,7 +178,7 @@ nav ul li a {
 .search-submit { 
     position: relative;
     top: 2px;
-    background: #AFD368 url('assets/images/search.png') no-repeat;
+    background: #C4DF90 url('assets/images/search.png') no-repeat;
     border: 0;
     height: 16px;
     width: 16px;
@@ -204,37 +234,79 @@ nav a, nav a:visited {
     color: #fff;
 }
 
+.post_content a {
+    font-weight: bold;
+    color: #9C2812;
+}
+
 footer a, footer a:visited {
     color: #F8FFD0;
 }
 
 /******** BUTTONS ********/
-#top-panel .buttoncontainer {
-    height: 83px;
-}
-
-#top-panel .button {
-    position: relative;
-    top: 30px;
-    left: 180px;
-    width: 120px;
-    height: 40px;
-    text-align: center;
+.button {
+    display: inline-block;
+    padding: 8px;
     background-color: #c05743;
     border: 1px #693025 solid;
-    box-shadow: #000 2px 2px 8px;
-}
-
-#top-panel .button span {
-    position: relative;
-    top: 10px;
+    border-radius: 2px;
+    box-shadow: #000 2px 2px 4px;
     color: #fff;
 }
 
+#top-panel .buttoncontainer { height: 73px; }
+
+#top-panel .buttoncontainer .button {
+    position: relative;
+    top: 30px;
+    left: 180px;
+}
+
 /******** IMAGES ********/
+
 #top-panel-pic {
     border: 1px #222125 solid;
     background-image: url(assets/images/);
     width: 200px;
     height: 200px;
 }
+
+.post_thumbnail {
+    border: 1px #222125 solid;
+}
+
+#latest_blog_posts .post_thumbnail {
+    width: 130px;
+    height: 130px;
+    margin: 0 10px 10px 0;
+}
+
+/******** LOGIN SCREEN ********/
+html { background: #DEF0BC !important; }
+
+body.login { background: #DEF0BC !important; }
+
+#login h1 a { 
+	background-image: url(assets/images/eklund_consulting_logo.png) !important;
+        background-size: 354px 35px !important;
+        width: 354px !important;
+        height: 35px;
+        margin-left: -20px;
+}
+
+.login form .input, .login form input[type=checkbox] { background: rgba(211, 231, 172, 0.3) !important; }
+
+.wp-core-ui .button-primary {
+    background: #c05743 !important;
+    border-color: #693025 !important;
+}
+.wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus {
+    background: #B45240 !important;
+    border-color: #693025 !important;
+}
+
+
+
+// #DEF0BC - background
+// #C4DF90 - banner
+//
