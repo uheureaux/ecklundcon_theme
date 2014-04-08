@@ -41,7 +41,6 @@ header, footer {
 }
 
 header {
-    margin-top: 10px;
     background: #C4DF90 no-repeat;
     color: #fff;
 }
@@ -112,6 +111,15 @@ p {
 
 .greytext { color: #777; }
 
+.fixed {
+    -webkit-box-shadow: 0 4px 10px -3px #000;
+    -moz-box-shadow: 0 4px 10px -3px #000;
+    -o-box-shadow: 0 4px 10px -3px #000;
+    box-shadow: 0 4px 10px -3px #000;
+    position: fixed !important;
+    width: 780px;
+}
+
 /******** BANNER ********/
 #banner {
     overflow: auto;
@@ -138,8 +146,10 @@ nav {
     padding: 10px;
     background-color: #c05743;
     text-align: center; 
+    font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
+    z-index: 10;
     //-webkit-animation: sillynav 3s infinite;
 }
 
@@ -158,6 +168,8 @@ nav ul li a {
     width: 250px;
 }
 
+.testimonials { margin-bottom: 30px; }
+
 .testimonials h2 { margin-bottom: 20px; }
 
 .testimonials p { 
@@ -165,11 +177,21 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.testimonials .buttoncontainer{
-    text-align:  center;
-}
+p.testimonial { font-style: italic; }
 
 .testimonials .buttoncontainer .button{
+    margin-top: 10px;
+    width: 130px;
+}
+
+.thebook h2 { margin-bottom: 20px; }
+
+.thebook p { 
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.thebook .buttoncontainer .button{
     margin-top: 10px;
     width: 130px;
 }
@@ -262,18 +284,21 @@ nav ul li a {
     height: 35px;
 }
 
-#facebook-icon {
-    background-image: url('assets/images/facebook.png');
-}
-#twitter-icon {
-    background-image: url('assets/images/twitter.png');
-}
-#googleplus-icon {
-    background-image: url('assets/images/googleplus.png');
-}
-#linkedin-icon {
-    background-image: url('assets/images/linkedin.png');
-}
+#facebook-icon { background-image: url('assets/images/facebook.png'); }
+
+#facebook-icon:hover { background-image: url('assets/images/facebook_hover.png'); }
+
+#twitter-icon { background-image: url('assets/images/twitter.png'); }
+
+#twitter-icon:hover { background-image: url('assets/images/twitter_hover.png'); }
+
+#googleplus-icon { background-image: url('assets/images/googleplus.png'); }
+
+#googleplus-icon:hover { background-image: url('assets/images/googleplus_hover.png'); }
+
+#linkedin-icon { background-image: url('assets/images/linkedin.png'); }
+
+#linkedin-icon:hover { background-image: url('assets/images/linkedin_hover.png'); }
 
 /******** EXTRA INFORMATION ********/
 #credits {
@@ -291,6 +316,8 @@ body a, body a:visited{
     text-decoration: none;
     color: #222125;
 }
+
+body a:hover { color: #5C5963; }
 
 nav a, nav a:visited {
     color: #fff;
@@ -321,13 +348,16 @@ footer a, footer a:visited {
     color: #fff;
 }
 
+.buttoncontainer { text-align: center; }
+
 #top-panel .buttoncontainer { height: 73px; }
 
 #top-panel .buttoncontainer .button {
     position: relative;
     top: 30px;
-    left: 180px;
 }
+
+#latest_blog_posts .button { margin-top: 11px; }
 
 /******** IMAGES ********/
 
@@ -340,13 +370,25 @@ footer a, footer a:visited {
 
 .post_thumbnail {
     border: 1px #222125 solid;
-}
-
-#latest_blog_posts .post_thumbnail {
     width: 130px;
     height: 130px;
     margin: 0 10px 10px 0;
 }
+
+#thebook_thumbnail_container { text-align: center; }
+
+#thebook_thumbnail {
+    display: inline-block;
+    border: 1px #222125 solid;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+
+/******** TOP BUTTON ********/
+
+//TODO: Add initial fade-in css for top button.
+//TODO: Add :hover alpha css for top button.
 
 /******** LOGIN SCREEN ********/
 html { background: #DEF0BC !important; }
@@ -371,9 +413,3 @@ body.login { background: #DEF0BC !important; }
     background: #B45240 !important;
     border-color: #693025 !important;
 }
-
-
-
-// #DEF0BC - background
-// #C4DF90 - banner
-//

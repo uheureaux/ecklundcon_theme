@@ -5,7 +5,8 @@
         <title><?php bloginfo('title') ?></title>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="<?php echo get_template_directory_uri() ?>/js/jquery.js"></script>
+        <script src="<?php echo get_template_directory_uri() ?>/js/nav_push.js"></script>
         <?php wp_head() ?>
     </head>
         
