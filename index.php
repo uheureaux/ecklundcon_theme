@@ -1,8 +1,8 @@
 <?php get_header() ?>
 
 <?php 
-    $top_panel_page = get_page(52);
-    $testimonial_page = get_page(66);
+    $top_panel_page = get_page(28);
+    $testimonial_page = get_page(30);
 ?>
 
 <div id="content">
