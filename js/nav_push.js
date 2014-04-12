@@ -9,7 +9,7 @@
  */
 
 $(document).ready(function () {
-	var header = $('header').outerHeight(true) + 32;
+	var header = $('nav').position().top;
         var navHeight = $('nav').outerHeight();
 	
 	$(window).scroll(function () {
