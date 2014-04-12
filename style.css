@@ -361,28 +361,31 @@ footer a, footer a:visited {
 
 /******** IMAGES ********/
 
-#top-panel-pic {
-    border: 1px #222125 solid;
-    background-image: url(assets/images/);
-    width: 200px;
-    height: 200px;
+#top-panel-thumbnail {
+
 }
 
 .post_thumbnail {
-    border: 1px #222125 solid;
-    width: 130px;
-    height: 130px;
-    margin: 0 10px 10px 0;
+    
 }
 
 #thebook_thumbnail_container { text-align: center; }
 
 #thebook_thumbnail {
     display: inline-block;
-    border: 1px #222125 solid;
+    margin-bottom: 15px;
+}
+
+#default_thumbnail {
+    background-image: url(assets/images/default_thumbnail.png);
     width: 130px;
     height: 130px;
-    margin-bottom: 15px;
+}
+
+#default_thumbnail_200x200 {
+    background-image: url(assets/images/default_thumbnail_200x200.png);
+    width: 200px;
+    height: 200px;
 }
 
 /******** TOP BUTTON ********/

@@ -1,6 +1,9 @@
 <?php
     // Adding HTML5 support to the theme.
     add_theme_support('html5', array('search-form'));
+    
+    //Adding post thumbnail support to the theme.
+    add_theme_support('post-thumbnails');
 
     // Changes the login screen logo.
     function login_css() {

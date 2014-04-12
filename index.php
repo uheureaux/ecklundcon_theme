@@ -37,7 +37,16 @@
 
 <div id="content">
     <div id="top-panel">
-        <div id="top-panel-pic" class="left"><?php ?></div>
+        <div id="top-panel-thumbnail" class="left">
+            <?php
+                if(has_post_thumbnail($top_panel_page->ID)) {
+                    the_post_thumbnail('200px', '200px');
+                }
+                else {
+                    echo '<div id="default_thumbnail_200x200"></div>';
+                }
+            ?>
+        </div>
         <div id="top-panel-info" class="right">
             <h2><?php echo $top_panel_page->post_title; ?></h2>
             <p><?php echo $top_panel_page->post_content; ?></p>
@@ -54,7 +63,16 @@
             <!-- START POSTS LOOP -->
             <?php $i = 0; while( $i < 4 && have_posts()): the_post() ?>
                 <div class="post">
-                    <div class="post_thumbnail left"><?php the_post_thumbnail('130px', '130px')?></div>
+                    <div class="post_thumbnail left">
+                        <?php 
+                            if(has_post_thumbnail()) {
+                                the_post_thumbnail('130px', '130px');
+                            }
+                            else {
+                                echo '<div id="default_thumbnail"></div>';
+                            }
+                            ?>
+                    </div>
                     <div class="post_content right">
                         <h3><a href="#"><?php the_title() ?></a></h3>
                         <h5 class="greytext"><?php the_time('F jS, Y') ?></h5>
@@ -88,7 +106,16 @@
 
                 <div id="thebook_thumbnail_container">
                     <h2><?php echo $thebook_page->post_title; ?></h2>
-                    <div id="thebook_thumbnail"></div>
+                    <div id="thebook_thumbnail">
+                        <?php    
+                            if(has_post_thumbnail($thebook_page->ID)) {
+                                the_post_thumbnail('130px', '130px');
+                            }
+                            else {
+                                echo '<div id="default_thumbnail"></div>';
+                            }
+                        ?>
+                    </div>
                 </div>
                 <p><?php echo $thebook_page->post_content; ?></p>
                 <?php 
